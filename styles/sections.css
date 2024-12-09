@@ -1,0 +1,21 @@
+
+#featured {
+    img{
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .card{
+        position: relative;
+        overflow: hidden;
+    
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            background-color: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    
+        }
+    }
+}
